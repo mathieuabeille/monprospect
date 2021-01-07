@@ -1,1 +1,75 @@
-// Specific CSS for your home-page
+.banner {
+  height: calc(90vh);
+  background-size: cover;
+  background-position: top;
+}
+
+.banner-text {
+  height: calc(20vh);
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-direction: column;
+}
+
+
+.board{
+  width: 66%;
+  height: 65vh;
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin: auto;
+  background-color: $white;
+}
+
+.form-board {
+
+  .form-item{
+    display:flex;
+justify-content:center;
+align-items:center;
+padding: 0.6rem;
+      p {
+    font-size: 1rem;
+    padding: 0.44rem;
+    color: $blue;
+  }
+  input{
+    border: none;
+    border-bottom: solid 1px $blue;
+    min-width: 150px;
+    font-size: 0.6rem;
+  }
+  select{
+    border: none;
+    padding: 0px;
+    color: $blue;
+    text-decoration: underline;
+
+
+    }
+    .dropdown-from{
+      background-color: $white !important;
+      color: $blue !important;
+      padding: 0.44rem;
+    }
+    select:focus{
+    outline: none;
+      background-color: $white !important;
+      color: $blue !important;
+      padding: 0.44rem;
+    }
+  }
+}
+
+.fancy-underline {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 78%;
+}
+
