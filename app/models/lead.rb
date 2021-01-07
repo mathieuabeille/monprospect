@@ -1,4 +1,4 @@
 class Lead < ApplicationRecord
-    validates :email, :number, :leadtype, :quantity, presence: true
+    validates :email, :number, :leadtype, :region, :quantity, presence: true
 
 end

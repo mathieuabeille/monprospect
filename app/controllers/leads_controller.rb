@@ -11,7 +11,7 @@ class LeadsController < ApplicationController
   # GET /leads/1
   # GET /leads/1.json
   def show
-    if @lead.leadtype == 'présentiels'
+    if @lead.leadtype === 'présentiels'
         @unit = 570
         @price = @lead.quantity*@unit
      else
@@ -77,6 +77,6 @@ class LeadsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def lead_params
-      params.require(:lead).permit(:email, :number, :leadtype, :quantity)
+      params.require(:lead).permit(:email, :number, :leadtype, :quantity, :region)
     end
 end
