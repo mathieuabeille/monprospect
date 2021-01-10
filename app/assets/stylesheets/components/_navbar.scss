@@ -1,4 +1,5 @@
 .navbar-lewagon {
+  z-index:2; /*Add this*/
   justify-content: space-between;
   background: $blue;
   color: $white;

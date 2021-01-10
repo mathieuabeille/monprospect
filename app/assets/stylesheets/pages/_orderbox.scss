@@ -1,8 +1,6 @@
 
 .chatbox{
   position: fixed;
-  border: solid 1px #d7d9ea;
-  border-radius: 10px;
   background-color: white;
   width: 33%;
   min-height: 82vh;
@@ -10,6 +8,7 @@
   right: 20px;
   z-index: 5;
   display: block;
+border-radius: 15px;
 }
 .chatmenu{
   display: flex;
@@ -110,26 +109,34 @@ input{
 
   .form-item{
     display:flex;
-justify-content:center;
+justify-content:flex-end;
 align-items:center;
 padding: 0.6rem;
       p {
     font-size: 0.64rem;
     padding: 0.44rem;
     color: $black;
+
   }
   input{
     border: none;
-    border-bottom: solid 1px $black;
+    border-bottom: solid 1px $green;
     min-width: 150px;
-    font-size: 0.64rem;
+    font-size: 0.84rem;
+        color: $green;
+        background-color: $light-gray;
+        border-radius: 0px;
+
   }
   select{
+            background-color: $light-gray;
+        border-radius: 0px;
+
     border: none;
     padding: 0px;
         font-size: 0.64rem;
 
-    color: $black;
+    color: $green;
     text-decoration: underline;
 
 

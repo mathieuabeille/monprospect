@@ -18,12 +18,12 @@
 
 
 .btn-cta {
-  color: $white;
+  color: $white!important;
   border: 1px solid $green!important;
-  background-color: $green;
-  padding: 8px 24px;
+  background-color: $green!important;
+  padding: 8px 24px!important;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 50px!important;
   font-size: 1rem !important;
   font-weight: lighter;
   transition: opacity 0.3s ease;
