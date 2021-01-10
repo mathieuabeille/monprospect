@@ -3,6 +3,8 @@
   background: $blue;
   color: $white;
   height: 10vh;
+  position: fixed;
+  width: 100%;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   .menu {
     display: flex;

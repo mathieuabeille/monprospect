@@ -1,0 +1,44 @@
+
+  <div id="myDIV" class="chatbox" >
+
+   <%= simple_form_for(@lead) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-board">
+    <div class="form-item">
+    <p>Je souhaite obtenir <%= f.input :quantity, label: false, collection: [5, 10, 20 ], default: 1 %> <p>rendez-vous  </p>
+    </div>
+    <div class="form-item">
+      <p>de déficalisation en région  <%= f.input :region, label: false, collection: ["partout en France", 'Alsace','Aquitaine','Auvergne' ,'Basse-Normandie' ,'Bourgogne','Bretagne','Centre' ,'Champagne-Ardenne','Corse','Franche-Comté','Haute-Normandie' ,'Ile-de-France' ,'Languedoc-Roussillon' ,'Limousin','Lorraine','Midi-Pyrénées','Nord-Pas-de-Calais','Pays de la Loire','Picardie','Poitou-Charentes','PACA','Rhône-Alpes','DOM'], default: "partout en France",  class: "form-item" %></p>
+    </div>
+    <div class="form-item">
+      <p>mon email est <%= f.input :email, label: false %></p>
+</div>
+  <div class="form-item">
+
+       <p> et je suis joignable au <%= f.input :number, label: false %></p>
+    </div>
+
+
+  <div class="form-item">
+    <%= f.button :submit,  'Simuler un devis', class: "btn-cta" %>
+
+
+  </div>
+  </div>
+
+
+<% end %>
+  </div>
+
+  <script>
+    function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  </script>

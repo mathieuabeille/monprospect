@@ -4,20 +4,27 @@
     <% end %>
   <div class="menu">
     <div class="menu-item">
-    <%= link_to "#" do %>
-      Nos tarifs
-    <% end %>
-    <%= link_to "#" do %>
+    <%= link_to "#learnmore" do %>
       En savoir +
     <% end %>
-    <%= link_to "#" do %>
+    <%= link_to "#pricing" do %>
+      Nos tarifs
+    <% end %>
+
+    <%= link_to "#contact" do %>
       Contact
     <% end %>
     </div>
-
+<% if user_signed_in? %>
+ <%= link_to  destroy_user_session_path, method: :delete,  class: "btn-navbar" do %>
+  Déconnexion
+   <% end %>
+  <% else %>
     <%= link_to new_user_session_path, class: "btn-navbar" do %>
       Se connecter
     <% end %>
+  <% end %>
+
   </div>
 
 

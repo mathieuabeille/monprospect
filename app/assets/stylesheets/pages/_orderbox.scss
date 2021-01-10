@@ -1,0 +1,149 @@
+
+.chatbox{
+  position: fixed;
+  border: solid 1px #d7d9ea;
+  border-radius: 10px;
+  background-color: white;
+  width: 33%;
+  min-height: 82vh;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+  display: block;
+}
+.chatmenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.chatlogo{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: solid #d7d9ea 1px;
+}
+.chatButton{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  color: #3271BB;
+  font-style: bold;
+  cursor: pointer;
+}
+.chatButton:hover{
+  background-color: #f4F4F4;
+}
+.left-chat{
+  display: flex;
+  padding: 10px;
+}
+.left-message{
+  background-color: #d7d9ea;
+  width: 60%;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  font-size: 0.64em;
+}
+.messagelogo{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: solid #d7d9ea 1px;
+  margin: 5px;
+}
+.text-input{
+  position: fixed;
+  background-color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  bottom: 11px;
+  width: 300px;
+}
+.input{
+  width: 80%;
+}
+input{
+  width: 88%;
+  background-color: #f4F4F4;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #d7d9ea;
+}
+.chat{
+  position: fixed;
+  color: $black;
+  background-color: white;
+  font-size: 1rem;
+  border: 1px solid $light-gray;
+  text-align:center;
+  border-radius: 40px;
+  width: 4rem;
+  height: 1.7rem;
+  bottom: 10px;
+  right: 10px;
+  z-index: 5;
+}
+.chat:hover{
+  transform: scale(1.1);
+  transition: all 0.6s ease 0s;
+}
+.btn-send{
+  display: flex;
+  align-items: center;
+  color: #3271BB;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+
+
+.form-board {
+
+  .form-item{
+    display:flex;
+justify-content:center;
+align-items:center;
+padding: 0.6rem;
+      p {
+    font-size: 0.64rem;
+    padding: 0.44rem;
+    color: $black;
+  }
+  input{
+    border: none;
+    border-bottom: solid 1px $black;
+    min-width: 150px;
+    font-size: 0.64rem;
+  }
+  select{
+    border: none;
+    padding: 0px;
+        font-size: 0.64rem;
+
+    color: $black;
+    text-decoration: underline;
+
+
+    }
+    .dropdown-from{
+      background-color: $white !important;
+      color: $black !important;
+      padding: 0.44rem;
+    }
+    select:focus{
+    outline: none;
+      background-color: $white !important;
+      color: $black !important;
+      padding: 0.44rem;
+    }
+  }
+}

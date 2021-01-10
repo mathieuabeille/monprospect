@@ -1,36 +1,109 @@
-<div class="banner" style="background-image: url(<%= asset_path 'banner.png' %>);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1511376979163-f804dff7ad7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);" >
   <div class="banner-text">
-    <h1>Trouver des leads <strong class="fancy-underline">Loi Pinel</strong> n'a jamais été aussi simple !</h1>
-    </div>
-  <div class="board">
-
-<%= simple_form_for(@lead) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-
-  <div class="form-board">
-    <div class="form-item">
-    <p>Je souhaite obtenir <%= f.input :quantity, label: false, collection: [5, 6, 7, 8, 9, 10 ], default: 1 %> <p>rendez-vous </p> <%= f.input :leadtype, label: false, collection: ["présentiels", "téléphoniques"], default: "rendez-vous",  class: "form-item" %> </p>
-    </div>
-    <div class="form-item">
-      <p>de déficalisation en région  <%= f.input :region, label: false, collection: ["partout en France", 'Alsace','Aquitaine','Auvergne' ,'Basse-Normandie' ,'Bourgogne','Bretagne','Centre' ,'Champagne-Ardenne','Corse','Franche-Comté','Haute-Normandie' ,'Ile-de-France' ,'Languedoc-Roussillon' ,'Limousin','Lorraine','Midi-Pyrénées','Nord-Pas-de-Calais','Pays de la Loire','Picardie','Poitou-Charentes','PACA','Rhône-Alpes','DOM'], default: "partout en France",  class: "form-item" %></p>
-    </div>
-    <div class="form-item">
-      <p>mon email est <%= f.input :email, label: false %></p> <p> et je suis joignable au <%= f.input :number, label: false %></p>
-    </div>
-
-
-  <div class="form-item">
-    <%= f.button :submit,  'Simuler un devis', class: "btn-cta" %>
-
-
+    <h2>Obtenir des rendez-vous <strong class="fancy-underline">défiscalisation</strong> n'a jamais été aussi simple</h2>
   </div>
   </div>
 
+  <div class="board" id="learnmore" >
 
-<% end %>
+<h2 ><strong class="fancy-underline" >En savoir plus</strong></h2>
+ <div >
+      <div>
+        <h3><i class="fas fa-desktop"></i></h3>
+        <h3>Suivez l'évolution de vos <b>leads</b></h3>
+        <p>
+          Nous avons développé un outil CRM qui vous permez de déclarer de faux contacts, commander de nouveaux rendez-vous, le tout en quelques clics.
+</p>
+      </div>
+
+            <div>
+              <h3><i class="fas fa-bullseye"></i></h3>
+        <h3>Des critères <b>garantis</b></h3>
+        <p>
+          RDV confirmé à À J-1​
+</p>
+<p>
+Un prospect avec un taux d'endettement inférieur à 25%, en activité, géolocalisé
+</p>
+<p>
+  Le montant d'imposition annuel minimum garanti des prospects est de 3500 €.
+</p>
+      </div>
+
+            <div>
+              <h3><i class="fas fa-phone-volume"></i></h3>
+        <h3>Notre <b>expertise</b></h3>
+        <p>
+          Notre expertise vous fait gagner du temps. Nous vous fournissons des contacts et des rendez-vous, ciblé par des professionnels expérimentés, sous reserve de disponibilité dans votre département.
+</p>
+      </div>
+
+    </div>
+</div>
+<div id="pricing" class="title-section">
+ <h2><strong class="fancy-underline" >Nos tarifs</strong></h2>
+</div>
+<div class="pricing">
+  <div class="pricing-item">
+    <div class="price">
+<p>2875 € HT</p>
+
+    </div>
+    <div class="desc">
+
+5 RENDEZ-VOUS EXCLUSIFS
+    </div>
+            <div class="btn-cta">
+      Acheter
+    </div>
+  </div>
+  <div class="pricing-item">
+    <div class="price">
+<p>5750 € HT</p>
+
+    </div>
+    <div class="desc">
+10 RENDEZ-VOUS EXCLUSIFS
+
+    </div>
+        <div class="btn-cta">
+      Acheter
+    </div>
+  </div>
+  <div class="pricing-item">
+    <div class="price">
+      <p>11500 € HT</p>
+
+    </div>
+
+    <div class="desc">
+20 RENDEZ-VOUS EXCLUSIFS
+
+    </div>
+    <div class="btn-cta">
+      Acheter
+    </div>
+  </div>
+</div>
+<div id="contact" class="title-section">
+ <h2><strong class="fancy-underline" >Nous contacter</strong></h2>
+</div>
+<div class="contact">
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<div class="btn-cta">
+  Envoyer
 </div>
 </div>
+
+
 
 
 
