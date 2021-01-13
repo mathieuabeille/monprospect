@@ -1,22 +1,97 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1511376979163-f804dff7ad7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);" >
-  <div class="banner-text">
+<div class="head1">
+  <div class="content">
+  <div class="texthead1">
     <h2>Obtenir des rendez-vous <strong class="fancy-underline">défiscalisation</strong> n'a jamais été aussi simple</h2>
+    <br/>
+    <h3>Centre d’appel dédié au métier de la défiscalisation, «  MonProspect » s’est structuré afin de proposer une solution complètement intégrée allant de la fourniture de rendez-vous verifié à la gestion de vos équipes via un CRM simple et efficace</h3>
   </div>
+  <div class="form">
+
   </div>
+
+  </div>
+</div>
+
+<div class="form-container">
+    <div class="register-box">
+    <div class="form">
+      <h6>
+        <b>
+          Inscription ici
+        </b>
+      </h6>
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= f.error_notification %>
+
+          <div class="form-inputs">
+            <%= f.input :email, label: 'Adresse email',
+                        required: true, placeholder: 'Email',
+                       label: false,
+                        input_html: { autocomplete: "email" }%>
+            <%= f.input :company, label: 'Entreprise',placeholder: 'Entreprise',
+                        required: true, label: false
+                    %>
+            <%= f.input :phone, label: 'Téléphone',placeholder: 'Téléphone',
+                        required: true, label: false %>
+            <%= f.input :password, placeholder: 'Mot de passe',
+                        required: true, label: false,
+                        hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                        input_html: { autocomplete: "new-password" } %>
+            <%= f.input :password_confirmation, placeholder: 'Confirmez le mot de passe',
+                        required: true, label: false,
+                        input_html: { autocomplete: "new-password" } %>
+          </div>
+
+          <div class="form-actions">
+            <%= f.button :submit, "Inscription", class: 'btn-cta' %>
+          </div>
+        <% end %>
+              <p>
+                Nous intervenons en amont de votre développement et vous proposons une solution complètement intégrée allant de la fourniture de rendez-vous, verifié et confirmé, jusqu’à la gestion de vos équipes via un CRM simple et efficace.
+            </p>
+
+            </div>
+
+  </div>
+</div>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1511376979163-f804dff7ad7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);" >
+
+
+  </div>
+
+
+
 
   <div class="board" id="learnmore" >
 
-<h2 ><strong class="fancy-underline" >En savoir plus</strong></h2>
- <div class="boardContent">
-      <div class="usp-item">
+
+<div class="cards">
+
+  <div class="card-category" >
+        <div class="usp-item">
+         <div class="usp"><i class="fas fa-phone-volume"></i></div>
+        <h3>Notre <b>expertise</b></h3>
+                 <p>
+          Nous connaissons parfaitement les problématiques terrain que vous ou vos conseillers rencontrez au quotidien et avons mis en place un processus commercial efficace, vertueux.
+        </p>
+
+      </div>
+</div>
+<div class="card-category" >
+        <div class="usp-item">
         <div class="usp"><i class="fas fa-desktop"></i></div>
         <h3>Suivez l'évolution de vos <b>leads</b></h3>
         <p>
           Nous avons développé un outil CRM qui vous permez de déclarer de faux contacts, commander de nouveaux rendez-vous, le tout en quelques clics.
 </p>
       </div>
+</div>
+<div class="card-category">
 
-            <div class="usp-item">
+</div>
+<div class="card-category" >
+              <div class="usp-item">
               <div class="usp"><i class="fas fa-bullseye"></i></div>
         <h3>Des critères <b>garantis</b></h3>
         <p>
@@ -29,17 +104,33 @@ Un prospect avec un taux d'endettement inférieur à 25%, en activité, géoloca
   Le montant d'imposition annuel minimum garanti des prospects est de 3500 €.
 </p>
       </div>
-
-            <div class="usp-item">
+</div>
+<div class="card-category" >
+              <div class="usp-item">
               <div class="usp"><i class="fas fa-phone-volume"></i></div>
         <h3>Notre <b>expertise</b></h3>
         <p>
           Notre expertise vous fait gagner du temps. Nous vous fournissons des contacts et des rendez-vous, ciblé par des professionnels expérimentés, sous reserve de disponibilité dans votre département.
 </p>
       </div>
-
-    </div>
 </div>
+<div class="card-category" >
+              <div class="usp-item">
+              <div class="usp"><i class="fas fa-phone-volume"></i></div>
+        <h3>Notre <b>expertise</b></h3>
+
+      <p>
+         Véritable commerciaux sédentaires, nos agents apportent une vraie valeur ajoutée, tant sur le plan de votre développement qu’en termes d’expérience client de vos futurs prospects.
+        </p>
+      </div>
+</div>
+
+</div>
+ </div>
+
+
+
+
 <div id="pricing" class="title-section">
  <h2><strong class="fancy-underline" >Nos tarifs</strong></h2>
 </div>
@@ -97,12 +188,10 @@ Un prospect avec un taux d'endettement inférieur à 25%, en activité, géoloca
 
 
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre message" rows="3"></textarea>
 </div>
 <div class="btn-cta">
   Envoyer

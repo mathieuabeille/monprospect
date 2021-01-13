@@ -1,9 +1,4 @@
-<div class="banner" style="background-image: url(<%= asset_path 'banner.png' %>);">
-  <div class="banner-text">
-    <h1>Trouver des leads <strong class="fancy-underline">Loi Pinel</strong> n'a jamais été aussi simple !</h1>
-    <h2>Connexion à notre outil CRM</h2>
-    </div>
-  <div class="board">
+<div class="head1">
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
     <%= f.input :email, label: 'Adresse email',
@@ -28,8 +23,6 @@
     <p>        <%= link_to new_user_registration_path, class: "btn-cta" do %>
       Inscription
     <% end %></p>
-
-</div>
 
 </div>
 

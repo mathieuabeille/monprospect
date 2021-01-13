@@ -4,26 +4,20 @@
     <% end %>
   <div class="menu">
     <div class="menu-item">
-    <%= link_to "#learnmore" do %>
-      En savoir +
-    <% end %>
-    <%= link_to "#pricing" do %>
-      Nos tarifs
-    <% end %>
-
-    <%= link_to "#contact" do %>
-      Contact
-    <% end %>
-    </div>
 <% if user_signed_in? %>
- <%= link_to  destroy_user_session_path, method: :delete,  class: "btn-navbar" do %>
+ <%= link_to  destroy_user_session_path, method: :delete do %>
   Déconnexion
    <% end %>
   <% else %>
-    <%= link_to new_user_session_path, class: "btn-navbar" do %>
-      Se connecter
+    <%= link_to new_user_session_path do %>
+      Connexion
     <% end %>
   <% end %>
+  </div>
+    <%= link_to new_lead_path, class: "btn-navbar" do %>
+      Obtenez un devis
+    <% end %>
+
 
   </div>
 
