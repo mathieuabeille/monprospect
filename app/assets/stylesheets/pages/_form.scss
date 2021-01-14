@@ -1,0 +1,38 @@
+.container{
+  display: flex;
+  justify-content:center;
+align-items:center;
+  min-height: 90vh;
+  width: 100%;
+
+  form{
+        width: 90%;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: $size9;
+        margin:$size9;
+      @media (min-width: 750px) {
+              width: 66%;
+
+
+  }
+
+  }
+  .form-inputs{
+    margin-top: 5vh;
+    width: 100%;
+  }
+}
+
+.register{
+  margin: $size9;
+  width: 100vw;
+  .btn-cta{
+    width: 100%!important;
+
+  }
+}
+.padding{
+         padding: $size9;
+height: 2vh;
+
+}

@@ -111,19 +111,25 @@ input{
     display:flex;
 justify-content:flex-end;
 align-items:center;
-padding: 0.6rem;
+padding: $size3;
+      flex-direction: column;
+text-align: center;
+        @media (min-width: 750px) {
+      flex-direction: row;
+
+  }
       p {
-    font-size: 0.64rem;
+    font-size: $size5;
     padding: 0.44rem;
     color: $black;
 
   }
   input{
     border: none;
-    border-bottom: solid 1px $green;
+    border-bottom: solid 1px $blue;
     min-width: 150px;
-    font-size: 0.84rem;
-        color: $green;
+    font-size: $size5;
+        color: $blue;
         background-color: $light-gray;
         border-radius: 0px;
 
@@ -134,9 +140,9 @@ padding: 0.6rem;
 
     border: none;
     padding: 0px;
-        font-size: 0.64rem;
+        font-size: $size5;
 
-    color: $green;
+    color: $blue;
     text-decoration: underline;
 
 

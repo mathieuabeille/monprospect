@@ -28,7 +28,7 @@
                         required: true, placeholder: 'Email',
                        label: false,
                         input_html: { autocomplete: "email" }%>
-            <%= f.input :company, label: 'Entreprise',placeholder: 'Entreprise',
+            <%= f.input :company, label: 'Entreprise', placeholder: 'Entreprise',
                         required: true, label: false
                     %>
             <%= f.input :phone, label: 'Téléphone',placeholder: 'Téléphone',
@@ -70,57 +70,60 @@
 
   <div class="card-category" >
         <div class="usp-item">
-         <div class="usp"><i class="fas fa-phone-volume"></i></div>
-        <h3>Notre <b>expertise</b></h3>
-                 <p>
-          Nous connaissons parfaitement les problématiques terrain que vous ou vos conseillers rencontrez au quotidien et avons mis en place un processus commercial efficace, vertueux.
+         <div class="usp"><img src="https://www.flaticon.com/svg/vstatic/svg/2706/2706950.svg?token=exp=1610623060~hmac=27212b29062995c4b053f031d875838a" class="img-usp"></div>
+        <h3>La prospection, notre <b>expertise</b></h3>
+          <p>
+          Nous connaissons parfaitement les problématiques terrain que vous, ou vos conseillers, rencontrez au quotidien et avons mis en place un processus commercial vertueux.
         </p>
 
       </div>
 </div>
+
 <div class="card-category" >
         <div class="usp-item">
-        <div class="usp"><i class="fas fa-desktop"></i></div>
+        <div class="usp"><img src="https://www.flaticon.com/svg/vstatic/svg/3930/3930395.svg?token=exp=1610623423~hmac=90d76c27d962b6d06a90be51ce313c6f" class="img-usp"></div>
         <h3>Suivez l'évolution de vos <b>leads</b></h3>
         <p>
-          Nous avons développé un outil CRM qui vous permez de déclarer de faux contacts, commander de nouveaux rendez-vous, le tout en quelques clics.
+          Nous avons développé un outil CRM qui vous permez un suivi de vos prospects, de déclarer de faux contacts, ou commander de nouveaux rendez-vous en trois clics.
 </p>
       </div>
 </div>
-<div class="card-category">
+
+<div class="hidemobile">
+<div class="card-category ">
 
 </div>
+</div>
 <div class="card-category" >
               <div class="usp-item">
-              <div class="usp"><i class="fas fa-bullseye"></i></div>
+              <div class="usp"><img src="https://www.flaticon.com/svg/vstatic/svg/3472/3472620.svg?token=exp=1610623521~hmac=b9b45b499bec66b546ff07f93e596792" class="img-usp"></div>
         <h3>Des critères <b>garantis</b></h3>
-        <p>
-          RDV confirmé à À J-1​
+
+<p>
+- Taux d'endettement inférieur à 25%
 </p>
 <p>
-Un prospect avec un taux d'endettement inférieur à 25%, en activité, géolocalisé
-</p>
-<p>
-  Le montant d'imposition annuel minimum garanti des prospects est de 3500 €.
+  - Imposition annuelle minimum inférieure à 3500 €.
 </p>
       </div>
 </div>
 <div class="card-category" >
               <div class="usp-item">
-              <div class="usp"><i class="fas fa-phone-volume"></i></div>
-        <h3>Notre <b>expertise</b></h3>
+              <div class="usp"><img src="https://www.flaticon.com/svg/vstatic/svg/3214/3214721.svg?token=exp=1610624093~hmac=1671c6f3ed48106bd920d0d8ab22ffbe" class="img-usp"></div>
+        <h3>Une prospection <b>ciblée </b> </h3>
         <p>
-          Notre expertise vous fait gagner du temps. Nous vous fournissons des contacts et des rendez-vous, ciblé par des professionnels expérimentés, sous reserve de disponibilité dans votre département.
+          Notre expertise vous fait gagner du temps. Nos prospects sont ciblés par des professionnels expérimentés, sous reserve de disponibilité dans votre département.
 </p>
       </div>
 </div>
 <div class="card-category" >
               <div class="usp-item">
-              <div class="usp"><i class="fas fa-phone-volume"></i></div>
-        <h3>Notre <b>expertise</b></h3>
+              <div class="usp">
+                <img src="https://www.flaticon.com/svg/vstatic/svg/1528/1528964.svg?token=exp=1610624419~hmac=d587a23043c72d9ae9be024fb1a45f03" class="img-usp"></div>
+        <h3>Des pros du <b>pre-sales</b></h3>
 
       <p>
-         Véritable commerciaux sédentaires, nos agents apportent une vraie valeur ajoutée, tant sur le plan de votre développement qu’en termes d’expérience client de vos futurs prospects.
+         Véritables commerciaux sédentaires, nos agents apportent une vraie valeur ajoutée, tant sur le plan de votre développement qu’en termes d’expérience client de vos futurs prospects.
         </p>
       </div>
 </div>
@@ -132,53 +135,56 @@ Un prospect avec un taux d'endettement inférieur à 25%, en activité, géoloca
 
 
 <div id="pricing" class="title-section">
- <h2><strong class="fancy-underline" >Nos tarifs</strong></h2>
+ <h2><strong class="fancy-underline" >Nos packs</strong></h2>
 </div>
 <div class="pricing">
   <div class="pricing-item">
-    <h3><i class="fas fa-play"></i><br/>Starter pack</h3>
+    <h3><i class="fas fa-play"></i><br/>Starter </h3>
+
+    <div class="desc">
+
+5 Rendez-vous exclusifs
+    </div>
     <div class="price">
 <p>2875 € HT</p>
 
     </div>
 
-    <div class="desc">
 
-5 RENDEZ-VOUS EXCLUSIFS
-    </div>
-            <div class="btn-cta">
+  <%= link_to new_user_registration_path, class: "btn-cta" do %>
       Acheter
-    </div>
+    <% end %>
   </div>
   <div class="pricing-item">
-        <h3><i class="fab fa-telegram-plane"></i></i><br/>Advanced pack</h3>
+        <h3><i class="fab fa-telegram-plane"></i></i><br/>Boost </h3>
 
+    <div class="desc">
+10 Rendez-vous exclusifs
+
+    </div>
     <div class="price">
 <p>5750 € HT</p>
 
     </div>
-    <div class="desc">
-10 RENDEZ-VOUS EXCLUSIFS
 
-    </div>
-        <div class="btn-cta">
+    <%= link_to new_user_registration_path, class: "btn-cta" do %>
       Acheter
-    </div>
+    <% end %>
   </div>
   <div class="pricing-item">
-            <h3><i class="fas fa-rocket"></i></i><br/>Rocket pack</h3>
+            <h3><i class="fas fa-rocket"></i></i><br/>Rocket </h3>
+    <div class="desc">
+20 Rendez-vous exclusifs
 
+    </div>
     <div class="price">
       <p>11500 € HT</p>
     </div>
 
-    <div class="desc">
-20 RENDEZ-VOUS EXCLUSIFS
 
-    </div>
-    <div class="btn-cta">
+    <%= link_to new_user_registration_path, class: "btn-cta" do %>
       Acheter
-    </div>
+    <% end %>
   </div>
 </div>
 <div  class="title-section">
@@ -187,15 +193,19 @@ Un prospect avec un taux d'endettement inférieur à 25%, en activité, géoloca
 <div class="contact" id="contact">
 
 
-<div class="mb-3">
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-</div>
-<div class="mb-3">
-  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre message" rows="3"></textarea>
-</div>
-<div class="btn-cta">
-  Envoyer
-</div>
+<%= simple_form_for(@contact) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :email, label: false, placeholder: 'email' %>
+    <%= f.input :message, label: false, placeholder: 'message' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Envoyer", class: 'btn-cta' %>
+  </div>
+<% end %>
 </div>
 
 

@@ -1,11 +1,35 @@
+.navb{
+   min-height: 10vh;
+     position: fixed;
+width: 100%;
+   z-index: 3;
+   background-color: $white;
+
+}
+
+.phone{
+  display: flex;
+  width: 100%;
+
+  .icon {
+    background-color: $blue;
+    padding: $size1;
+    color: white;
+  }
+  .number{
+    padding: $size1;
+    color: $blue;
+    background-color: $white;
+
+  }
+}
+
 .navbar-lewagon {
   z-index:2; /*Add this*/
   justify-content: space-between;
   background: $white;
   color: $black;
-  min-height: 10vh;
   padding: $size4;
-  position: fixed;
   width: 100%;
   z-index: 3;
   .menu {
@@ -32,7 +56,7 @@
 }
 
 .navbar-lewagon .navbar-brand h1 {
-  color: $black;
+  color: $blue;
   letter-spacing: 0.1;
   margin: 0;
   font-size: 1.25rem;

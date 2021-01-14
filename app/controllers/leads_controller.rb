@@ -1,6 +1,6 @@
 class LeadsController < ApplicationController
   before_action :set_lead, only: [:show, :edit, :update, :destroy]
-  skip_before_action :authenticate_user!, only: [ :home, :new, :create, :show ]
+  skip_before_action :authenticate_user!, only: [ :new, :create, :show ]
 
   # GET /leads
   # GET /leads.json
@@ -15,7 +15,7 @@ class LeadsController < ApplicationController
         @unit = 570
         @price = @lead.quantity*@unit
      else
-        @unit = 50
+        @unit = 570
         @price = @lead.quantity*@unit
     end
   end

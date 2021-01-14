@@ -1,6 +1,17 @@
+<div class="navb">
+<div class="phone">
+  <div class="icon">
+    <i class="fas fa-phone"></i>
+  </div>
+  <div class="number">
+    +33 (0)2 38 722 722
+  </div>
+</div>
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to root_path, class: "navbar-brand" do %>
-      <h1>mon prospect</h1>
+      <h1><%= image_tag "logo.png", height: "40px" %>rospect</h1>
+
+
     <% end %>
   <div class="menu">
     <div class="menu-item">
@@ -17,10 +28,6 @@
     <%= link_to new_lead_path, class: "btn-navbar" do %>
       Obtenez un devis
     <% end %>
-
-
   </div>
-
-
-
+</div>
 </div>

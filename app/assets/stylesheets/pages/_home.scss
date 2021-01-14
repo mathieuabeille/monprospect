@@ -1,3 +1,5 @@
+
+
 .head1{
   width: 90vw;
   justify-content: space-around;
@@ -7,10 +9,11 @@
   flex-direction: column;
   text-align: center;
   .content{
-      height: 45vh;
+      height: 60vh;
       margin-top:10vh;
         @media (min-width: 750px) {
       width: 100vw;
+      height: 45vh;
 
   }
   }
@@ -20,13 +23,13 @@
   text-align: left;
   }
   h2{
-  font-size: $size5;
+  font-size: $size6;
   @media (min-width: 750px) {
   font-size: $size8;
   }
   }
   h3{
-  font-size: $size4;
+  font-size: $size5;
   @media (min-width: 750px) {
   font-size: $size6;
   }
@@ -114,10 +117,20 @@ button{
 .usp-item{
   text-align: center;
   margin: 3rem;
+  .img-usp{
+  width: 75px;
+}
+h3{
+  font-size: $size6;
+  color: $blue;
+  padding:$size2;
+}
+p{
+  font-size: $size5;
+}
 }
 
 .usp{
-  font-size: 3rem;
 margin: auto;
 width: 75px;
 height: 75px;
@@ -226,6 +239,8 @@ display:flex;
 flex-direction: column;
 margin-bottom: 30px;
 h3 {
+  font-size: $size7;
+  color: $blue;
   text-align:center;
   padding-bottom: 2rem;
 }
@@ -235,14 +250,13 @@ font-size: 1.25rem;
   }
   .desc{
   padding-bottom: 2rem;
-
+margin: auto;
   }
 }
 
 .pricing-item:hover{
   transform: scale(1.1);
   transition: all 0.6s ease 0s;
-  border: 1px solid $blue;
 
 }
 
@@ -264,8 +278,6 @@ margin: auto;
   padding: 2rem;
   margin: auto;
   margin-bottom: 30px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 
@@ -274,7 +286,11 @@ margin: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   width: 95%;
+  margin-top: 23vh;
+      @media (min-width: 750px) {
   margin-top: 5vh;
+
+  }
 }
 
 // Smallest device
@@ -294,7 +310,7 @@ margin: auto;
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -312,10 +328,18 @@ margin: auto;
   }
 }
 
+  .hidemobile{
+    display: none;
+    @media (min-width: 750px) {
+      display: inline;
 
+  }
 .card-category {
 
   min-height: 180px;
+
+
+  }
 
 }
 
