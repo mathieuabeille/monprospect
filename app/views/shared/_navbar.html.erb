@@ -15,19 +15,27 @@
     <% end %>
   <div class="menu">
     <div class="menu-item">
-<% if user_signed_in? %>
+      <% if user_signed_in? %>
+       <%= link_to  appointments_path do %>
+        Commander des rendez-vous
+         <% end %>
  <%= link_to  destroy_user_session_path, method: :delete do %>
-  Déconnexion
-   <% end %>
-  <% else %>
-    <%= link_to new_user_session_path do %>
-      Connexion
-    <% end %>
-  <% end %>
+        Déconnexion
+         <% end %>
+        <% else %>
+          <%= link_to new_user_session_path do %>
+            Connexion
+          <% end %>
+
+        <% end %>
   </div>
-    <%= link_to new_lead_path, class: "btn-navbar" do %>
-      Obtenez un devis
-    <% end %>
+        <% if user_signed_in? %>
+        <% else %>
+
+ <%= link_to new_lead_path, class: "btn-navbar" do %>
+            Obtenez un devis
+          <% end %>
+        <% end %>
   </div>
 </div>
 </div>

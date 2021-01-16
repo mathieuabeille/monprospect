@@ -9,6 +9,12 @@
   height: 100px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
+   font-size: $size2;
+
+            @media (min-width: 750px) {
+
+ font-size: 1rem;
+  }
 }
 .footer-links {
   display: flex;
@@ -26,4 +32,13 @@
 }
 .footer .fa-heart {
   color: #D23333;
+}
+
+.logo-footer{
+   height:20px;
+
+              @media (min-width: 750px) {
+
+ height:40px;
+  }
 }

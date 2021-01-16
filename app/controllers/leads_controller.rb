@@ -12,10 +12,10 @@ class LeadsController < ApplicationController
   # GET /leads/1.json
   def show
     if @lead.leadtype === 'présentiels'
-        @unit = 570
+        @unit = 399
         @price = @lead.quantity*@unit
      else
-        @unit = 570
+        @unit = 399
         @price = @lead.quantity*@unit
     end
   end
