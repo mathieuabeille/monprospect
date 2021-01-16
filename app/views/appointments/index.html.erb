@@ -1,8 +1,46 @@
 <br/><br/><div class="padding"><br/></div>
 <div class="container-box">
-  <div class="action-cta">
-    <div class="btn-cta">Acheter des rendez-vous
+  <div class="head">
+  <div class="card-product">
+  <div class='edit'>    <%= link_to 'Modifier le compte', edit_user_registration_path %>
+</div>
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="card-product-infos">
+    <h2><%= @user.company %></h2>
+    <p><%= @user.lastname %></p>
+    <p><%= @user.email %></p>
+    <p><%= @user.phone %></p>
+    <p>Statut du compte: <span class="badge badge-warning">En attente</span>
+</p>
   </div>
+</div>
+
+  <div class="action-cta">
+<button type="button" class="btn-cta" data-toggle="modal" data-target="#exampleModal">
+  Acheter des rendez-vous
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Votre compte n'est pas validé</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Veuillez renseigner votre numéro de téléphone. Un agent mon prospect.fr vous contactera afin de valider votre compte.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
 </div>
 <div class="sheet-box">
   <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
