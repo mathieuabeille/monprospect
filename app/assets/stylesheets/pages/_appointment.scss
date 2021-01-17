@@ -8,14 +8,36 @@
     width: 90vw;
       display: flex;
 margin: auto;
+flex-direction:column;
+
 justify-content: space-between;
 align-items:center;
   padding: 1rem;
+    @media (min-width: 750px) {
+flex-direction:row;
+
+  }
+  }
+}
+.table{
+
+}
+.table-desktop{
+
+  display: none;
+      @media (min-width: 750px) {
+display: inline;
+
+}
+}
+
+.table-mobile{
+   display: inline;
+      @media (min-width: 750px) {
+display: none;
 
   }
 }
-
-
 
 .sheet-box{
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -56,26 +78,40 @@ margin: auto;
 
 .card-product {
   overflow: hidden;
-  height: 120px;
+  min-height: 120px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
+  flex-direction: column;
+margin-bottom: $size3;
+
   align-items: center;
+    @media (min-width: 750px) {
+flex-direction: row;
+margin-bottom: 0px;
+  }
 }
 
 .card-product img {
-  height: 100%;
   width: 120px;
+
+  height: 100%;
   object-fit: cover;
 }
 
 .card-product h2 {
-  font-size: 16px;
+  font-size: $size4;
+    @media (min-width: 750px) {
+font-size: $size6;
+  }
   font-weight: bold;
 }
 
 .card-product p {
-  font-size: 12px;
+    font-size: $size3;
+    @media (min-width: 750px) {
+font-size: $size5;
+  }
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -85,4 +121,36 @@ margin: auto;
 .card-product .card-product-infos {
   padding: 16px;
 }
+
+.empty{
+width: 66vw;
+
+}
+
+.tabs{
+  width: 90vw;
+  margin: auto;
+  font-size: $size5;
+}
+
+.tabs-underlined {
+  display: flex;
+  align-items: center;
+}
+
+.tabs-underlined .tab-underlined {
+  color: black;
+  padding: 8px;
+  margin: 8px 16px;
+  opacity: .4;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+}
+
+.tabs-underlined .tab-underlined.active {
+  opacity: 1;
+  border-bottom: 3px solid #555555;
+}
+
 

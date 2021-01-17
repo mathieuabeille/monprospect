@@ -1,0 +1,18 @@
+<%= simple_form_for(@order) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+ <p>Je souhaite obtenir: <%= f.input :quantity, label: false, collection: [1, 5, 6, 7, 8, 9, 10 ], default: 5 %> <p>rendez-vous de déficalisation en région: <%= f.input :region, label: false, collection: ["partout en France", 'Alsace','Aquitaine','Auvergne' ,'Basse-Normandie' ,'Bourgogne','Bretagne','Centre' ,'Champagne-Ardenne','Corse','Franche-Comté','Haute-Normandie' ,'Ile-de-France' ,'Languedoc-Roussillon' ,'Limousin','Lorraine','Midi-Pyrénées','Nord-Pas-de-Calais','Pays de la Loire','Picardie','Poitou-Charentes','PACA','Rhône-Alpes','DOM'], default: "partout en France",  class: "form-item" %></p>
+ <%= f.input :status, default: 'Commande en attente', :as => :hidden %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit,'Commander', class: "btn-cta" %>
+  </div>
+<br/><br/><br/>
+  <div>
+    La commande sera validée sous reserve de disponibilités dans votre région et si votre compte est validé.
+  </div>
+<% end %>

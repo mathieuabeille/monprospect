@@ -6,6 +6,8 @@ class AppointmentsController < ApplicationController
   def index
     @appointments = Appointment.all
     @user = current_user
+        @order = Order.new
+
   end
 
   # GET /appointments/1

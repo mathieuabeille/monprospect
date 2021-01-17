@@ -44,10 +44,10 @@
 <div class="tabs">
 <ul class="list-inline tabs-underlined">
   <li>
-    <%= link_to 'Vos commandes (0)', orders_path, class: 'tab-underlined' %>
+    <%= link_to 'Vos commandes (0)', orders_path, class: 'tab-underlined  active' %>
   </li>
   <li>
-    <%= link_to 'Vos rendez-vous (0)', appointments_path, class: 'tab-underlined active' %>
+    <%= link_to 'Vos rendez-vous (0)', appointments_path, class: 'tab-underlined' %>
   </li>
   <li>
     <%= link_to 'Vos factures (0)', invoices_path, class: 'tab-underlined' %>
@@ -64,35 +64,33 @@
   </div>
 </form>
 <div class="table-responsive">
+
 <table class="table-desktop table">
   <thead>
     <tr>
-        <th>Prénom</th>
-        <th>Nom</th>
-        <th>Horaire</th>
-        <th>Télephone</th>
-        <th>Email</th>
-        <th>Salaire</th>
-        <th>Taux endettement</th>
-        <th>Impôt annuel</th>
-        <th>Région</th>
-        <th>Status</th>
-    </tr>
-  </thead>
-</table>
-</div>
-<table class="table-mobile">
-  <thead>
-    <tr>
-        <th>Vos rendez-vous:</th>
-    </tr>
-  </thead>
-</table>
-<div class="body-sheet">
-  <p>Vous n'avez pas encore de rendez-vous</p>
-  <%= image_tag "empty.jpg", class: "empty" %>
+            <th scope="col">Nombre de rendez-vous</th>
+        <th scope="col">Région</th>
+                <th scope="col">Montant</th>
+                <th scope="col">Status de la commande</th>
 
+    </tr>
+  </thead>
+  <tbody>
+        <% @orders.each do |order| %>
+
+    <tr>
+      <td><%= order.quantity %></td>
+        <td><%= order.region %></td>
+       <td><%= order.quantity*399 %> € HT</td>
+        <td><span class="badge badge-warning"><%= order.status %></span></td>
+
+    </tr>
+            <% end %>
+
+  </tbody>
+</table>
 </div>
+
 </div>
 <div class="padding"></div>
 

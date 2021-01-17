@@ -47,10 +47,10 @@
     <%= link_to 'Vos commandes (0)', orders_path, class: 'tab-underlined' %>
   </li>
   <li>
-    <%= link_to 'Vos rendez-vous (0)', appointments_path, class: 'tab-underlined active' %>
+    <%= link_to 'Vos rendez-vous (0)', appointments_path, class: 'tab-underlined' %>
   </li>
   <li>
-    <%= link_to 'Vos factures (0)', invoices_path, class: 'tab-underlined' %>
+    <%= link_to 'Vos factures (0)', invoices_path, class: 'tab-underlined  active' %>
   </li>
 </ul>
 </div>
@@ -63,33 +63,16 @@
       <i class="fas fa-search"></i> Recherche
   </div>
 </form>
-<div class="table-responsive">
-<table class="table-desktop table">
-  <thead>
-    <tr>
-        <th>Prénom</th>
-        <th>Nom</th>
-        <th>Horaire</th>
-        <th>Télephone</th>
-        <th>Email</th>
-        <th>Salaire</th>
-        <th>Taux endettement</th>
-        <th>Impôt annuel</th>
-        <th>Région</th>
-        <th>Status</th>
-    </tr>
-  </thead>
-</table>
-</div>
+
 <table class="table-mobile">
   <thead>
     <tr>
-        <th>Vos rendez-vous:</th>
+        <th>Vos factures:</th>
     </tr>
   </thead>
 </table>
 <div class="body-sheet">
-  <p>Vous n'avez pas encore de rendez-vous</p>
+  <p>Vous n'avez pas encore de factures</p>
   <%= image_tag "empty.jpg", class: "empty" %>
 
 </div>
