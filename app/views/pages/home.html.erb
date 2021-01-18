@@ -22,6 +22,10 @@ Nous intervenons en amont de votre développement, notre équipe de commerciaux 
           Commandez des rendez-vous ici
         </b>
       </h6>
+            <% if user_signed_in? %>
+                        <%= render 'shared/orders' %>
+
+<% else %>
         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= f.error_notification %>
 
@@ -53,7 +57,7 @@ Nous intervenons en amont de votre développement, notre équipe de commerciaux 
 
 
             </p>
-
+<% end %>
             </div>
 
   </div>

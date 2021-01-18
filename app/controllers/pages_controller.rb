@@ -3,6 +3,8 @@ class PagesController < ApplicationController
 
   def home
     @lead = Lead.new
+        @order = Order.new
+
     @contact = Contact.new
   end
 
