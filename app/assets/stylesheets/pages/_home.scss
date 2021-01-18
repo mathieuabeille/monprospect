@@ -10,7 +10,7 @@
   text-align: center;
   .content{
       height: 60vh;
-      margin-top:10vh;
+      margin-top:15vh;
         @media (min-width: 750px) {
       width: 100vw;
       height: 45vh;
@@ -36,7 +36,7 @@
   }
 
   .texthead1{
-    margin-top: 10vh;
+    margin-top: 13vh;
     width: 66vw;
       @media (min-width: 700px) {
 
@@ -157,7 +157,7 @@ text-align: center;
   flex-direction: column;
   display: flex;
   background-color: $white;
-  margin-top: -45vh;
+  margin-top: -25vh;
     @media (min-width: 750px) {
    margin-top: -60vh;
 
