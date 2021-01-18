@@ -63,9 +63,9 @@
       <i class="fas fa-search"></i> Recherche
   </div>
 </form>
-<div class="table-responsive">
+<div class="table-responsive justify-content-center">
 
-<table class="table-desktop table">
+<table class="table-desktop justify-content-center table table-hover mx-auto w-autor">
   <thead>
     <tr>
             <th scope="col">Nombre de rendez-vous</th>
@@ -75,7 +75,10 @@
 
     </tr>
   </thead>
+  <% if @orders.present? %>
   <tbody>
+
+
         <% @orders.each do |order| %>
 
     <tr>
@@ -87,8 +90,17 @@
     </tr>
             <% end %>
 
+
+
   </tbody>
 </table>
+<% else %>
+<div class="body-sheet">
+  <p>Vous n'avez pas encore de commandes</p>
+  <%= image_tag "empty.jpg", class: "empty" %>
+
+</div>
+                        <% end %>
 </div>
 
 </div>

@@ -32,7 +32,7 @@ class OrdersController < ApplicationController
 
     respond_to do |format|
       if @order.save
-        format.html { redirect_to @order, notice: 'Nous avons bien reçu votre commande. Elle doit être validée.' }
+        format.html { redirect_to orders_path, notice: 'Nous avons bien reçu votre commande. Elle doit être validée.' }
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }

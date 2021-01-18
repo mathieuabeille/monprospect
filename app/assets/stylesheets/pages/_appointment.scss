@@ -1,3 +1,9 @@
+.table-responsive{
+  margin:auto;
+}
+
+
+
 .container-box{
   min-height: 100vh;
   .edit{
@@ -20,19 +26,22 @@ flex-direction:row;
   }
 }
 .table{
+width: 100%;
+margin: auto;
 
 }
 .table-desktop{
 
   display: none;
       @media (min-width: 750px) {
-display: inline;
-
+display: table;
+margin: auto;
+width: 100%;
 }
 }
 
 .table-mobile{
-   display: inline;
+   display: table;
       @media (min-width: 750px) {
 display: none;
 
