@@ -10,5 +10,8 @@ class PagesController < ApplicationController
 
   def role
     @users = User.all
+    @orders = Order.all
+    @leads = Lead.all
+@contacts = Contact.all
   end
 end

@@ -11,6 +11,7 @@
       <i class="fas fa-search"></i> Recherche</button>
   </div>
 </form>
+<h3>Utilisateurs</h3>
 <table class="table">
   <thead>
     <tr>
@@ -30,6 +31,81 @@
     <td><%= lead.phone %></td>
     <td><%= lead.lastname %></td>
     <td><%= lead.company %></td>
+  </tr>
+  <% end %>
+
+
+  </tbody>
+</table>
+
+<h3>Commandes</h3>
+<table class="table">
+  <thead>
+    <tr>
+        <th>Quantity</th>
+        <th>Région</th>
+
+
+    </tr>
+  </thead>
+    <tbody>
+
+  <% @orders.each do |lead| %>
+  <tr>
+    <td><%= lead.quantity %></td>
+    <td><%= lead.region %></td>
+
+  </tr>
+  <% end %>
+
+
+  </tbody>
+</table>
+<h3>Messages</h3>
+<table class="table">
+  <thead>
+    <tr>
+        <th>email</th>
+        <th>message</th>
+
+
+    </tr>
+  </thead>
+    <tbody>
+
+  <% @contacts.each do |lead| %>
+  <tr>
+    <td><%= lead.email %></td>
+    <td><%= lead.message %></td>
+
+  </tr>
+  <% end %>
+
+
+  </tbody>
+</table>
+
+<h3>Devis</h3>
+<table class="table">
+  <thead>
+    <tr>
+        <th>quantité</th>
+        <th>Region</th>
+        <th>email</th>
+        <th>numéro</th>
+
+
+    </tr>
+  </thead>
+    <tbody>
+
+  <% @leads.each do |lead| %>
+  <tr>
+    <td><%= lead.quantity %></td>
+    <td><%= lead.region %></td>
+    <td><%= lead.email %></td>
+    <td><%= lead.number %></td>
+
   </tr>
   <% end %>
 
