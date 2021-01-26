@@ -1,0 +1,19 @@
+<br/><br/><br/><div class="padding"><br/></div>
+<div class="container-box">
+  <div class="sheet-box">
+  <p>
+  <strong>Title:</strong>
+  <%= @blog.title %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @blog.rich_body %>
+</p>
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>
+  </div>
+</div>
+
+
